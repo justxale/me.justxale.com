@@ -1,6 +1,7 @@
 export const linktree = [
     {
         title: 'GitHub',
+        desc: 'All my projects are stored here!',
         link: 'https://github.com/JustXale',
         style: {
             height: '64px'
@@ -9,6 +10,7 @@ export const linktree = [
     },
     {
         title: 'Discord',
+        desc: 'Want to talk with me or others?',
         link: 'https://discord.gg/N4RRvrTQkc',
         style: {
             height: '48px'
@@ -17,6 +19,7 @@ export const linktree = [
     },
     {
         title: 'Telegram',
+        desc: 'Want to know anything anout my life?',
         link: 'https://t.me/justficial',
         style: {
             height: '48px'
@@ -25,6 +28,7 @@ export const linktree = [
     },
     {
         title: 'YouTube',
+        desc: 'My (empty) YouTube channel',
         link: '',
         style: {
             height: '48px'
