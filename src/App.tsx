@@ -1,33 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import './css/App.css'
+import {linktree} from "./consts/links";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className={'linktree'}>
+          <div className={'profile'}>
+              <img src={'https://cdn.justxale.com/png/profile/avatar.png'} id={'avatar'}/> <p id={'profile-name'}> JustXale</p>
+          </div>
+          <p>Just another fluffy creator</p>
+          <div>
+              <ul className={'links'}>
+                  {linktree.map((tab, i) => (
+                      <li key={i}>
+                          <a href={tab.link} target={'_blank'}><img src={tab.icon_url} id={'icon'} style={tab.style}/> {tab.title}</a>
+                      </li>
+                  ))}
+              </ul>
+          </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
+
   )
 }
 

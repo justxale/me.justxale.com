@@ -1,0 +1,79 @@
+/*noinspection CssUnknownTarget*/
+@import 'https://fonts.googleapis.com/css2?family=JetBrains+Mono&amp;display=swap';
+
+:root {
+  font-family: "JetBrains Mono", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #b2b2b2;
+}
+
+.profile {
+  display: flex;
+  font-size: 32px;
+  height: auto;
+}
+
+.linktree {
+  background: rgba(32, 32, 32, 0.7);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 50px;
+}
+
+.links {
+  padding-left: 0px;
+}
+
+.links li {
+  margin-top: 40px;
+  font-size: 32px;
+  list-style: none;
+  position: relative;
+  right: -24px;
+}
+
+#avatar {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 16px;
+  border: 4px solid white;
+}
+
+#icon {
+  width: auto;
+  position: relative;
+  bottom: -12px;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background: linear-gradient(106.43deg, #FF9900 -7.53%, #BD00FF 146.26%);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
