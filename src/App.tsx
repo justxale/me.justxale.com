@@ -2,7 +2,7 @@ import './css/App.css'
 import {linktree} from "./consts/links";
 
 function App() {
-  return (
+    return (
       <div className={'linktree'}>
           <div className={'profile'}>
               <img src={'https://cdn.justxale.com/png/profile/avatar.png'} id={'avatar'}/> <p id={'profile-name'}> JustXale</p>
@@ -15,7 +15,9 @@ function App() {
               <ul className={'links'}>
                   {linktree.map((tab, i) => (
                       <li key={i}>
-                          <a href={tab.link} target={'_blank'}><img src={tab.icon_url} id={'icon'} style={tab.style}/> {tab.title}</a>
+                          <a href={tab.link} target={'_blank'}><img src={tab.icon_url}
+                                                                    id={'icon'}
+                                                                    style={tab.style}/> {tab.title}</a> {/*IDK WHY THIS THING DOESN'T WORK*/}
                           <p id={'description'}>{tab.desc}</p>
                       </li>
                   ))}

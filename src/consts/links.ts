@@ -4,7 +4,9 @@ export const linktree = [
         desc: 'All my projects are stored here!',
         link: 'https://github.com/JustXale',
         style: {
-            height: '64px'
+            height: '64px',
+            position: "relative",
+            bottom: '-16px'
         },
         icon_url: 'https://cdn.justxale.com/svg/icons/GitHub.svg'
     },

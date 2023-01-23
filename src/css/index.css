@@ -29,7 +29,64 @@ a:hover {
 .profile {
   display: flex;
   justify-content: center;
-  font-size: 32px;
+}
+
+@media only screen and (max-width: 399px) {
+  .profile {
+    font-size: 24px;
+  }
+
+  #avatar {
+    height: 60px;
+    width: auto;
+    border-radius: 50%;
+    margin-right: 16px;
+    border: 4px solid white;
+    position: relative;
+    bottom: -4px;
+  }
+
+  #icon {
+    display: none;
+  }
+
+  .links li {
+    margin-top: 30px;
+    font-size: 24px;
+    list-style: none;
+    position: relative;
+    padding-left: 16px;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .profile {
+    font-size: 32px;
+  }
+
+  #avatar {
+    height: 80px;
+    width: auto;
+    border-radius: 50%;
+    margin-right: 16px;
+    border: 4px solid white;
+    position: relative;
+    bottom: -8px;
+  }
+
+  #icon {
+    width: auto;
+    position: relative;
+    bottom: -12px;
+  }
+
+  .links li {
+    margin-top: 40px;
+    font-size: 32px;
+    list-style: none;
+    position: relative;
+    right: -24px;
+  }
 }
 
 .profile-desc {
@@ -48,33 +105,9 @@ a:hover {
   padding-left: 0px;
 }
 
-.links li {
-  margin-top: 40px;
-  font-size: 32px;
-  list-style: none;
-  position: relative;
-  right: -24px;
-}
-
 #description {
   font-size: 16px;
   padding-left: 32px;
-}
-
-#avatar {
-  height: 80px;
-  width: auto;
-  border-radius: 50%;
-  margin-right: 16px;
-  border: 4px solid white;
-  position: relative;
-  bottom: -8px;
-}
-
-#icon {
-  width: auto;
-  position: relative;
-  bottom: -12px;
 }
 
 body {
