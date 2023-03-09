@@ -1,4 +1,3 @@
-import './css/App.css'
 import './css/media.css'
 import {linktree} from "./consts/links";
 
