@@ -6,8 +6,8 @@ import {ProfileIntegrations} from "../classes/profile/ProfileIntegrations";
 import {ProfileBadges} from "../classes/profile/ProfileBadges";
 
 function Profile() {
-    const integrations = new ProfileIntegrations
-    integrations.parseArrayToIntegrations(connections)
+    const links = new ProfileIntegrations
+    links.parseArrayToIntegrations(connections)
 
     const badges = new ProfileBadges
     badges.parseArrayToBadges(badgesArray)
@@ -38,8 +38,8 @@ function Profile() {
                         <p>Xale Justy | He/Him<br/>Web/Python Dev </p>
                     </div>
                     <div className={'tab profileConnections'}>
-                        <h4>Integrations</h4>
-                        {integrations.createIntegrationsElement()}
+                        <h4>Links</h4>
+                        {links.createLinksElement()}
                     </div>
                 </div>
             </div>

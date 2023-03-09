@@ -72,7 +72,7 @@ export class ProfileIntegrations {
         )
     }
 
-    public createIntegrationsElement() {
+    public createLinksElement() {
         if (this.titledConnections.length > 0 && this.untitledConnections.length > 0) {
             return (
                 <div className={'profile-connections'}>
