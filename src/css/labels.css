@@ -1,0 +1,13 @@
+.badgeLabel {
+    position: absolute;
+    z-index: 2;
+    width: auto;
+
+    background: rgba(0, 0, 0, 0.5);
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.badgeLabel p {
+
+}

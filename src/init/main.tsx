@@ -1,10 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
-import './css/index.css'
+import Profile from '../components/profile'
+import '../css/index.css'
+import '../css/colors.css'
+import '../css/media.css'
+
+function ProfileBadges() {
+    return null;
+}
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <App />
+    <Profile/>
   </React.StrictMode>
 )

@@ -1,0 +1,9 @@
+:root {
+    --color-profile-primary: #8000FF;
+    --color-profile-secondary: #F49763;
+
+    --color-text-secondary: rgba(255, 255, 255, 0.7);
+    --color-text-primary: #FFFFFF;
+
+    --color-lines-secondary: rgba(255, 255, 255, 0.5);
+}
