@@ -1,4 +1,5 @@
 import {Integration} from "../../types/Integration";
+import {CDNLink} from "../../data/consts";
 
 export class ProfileIntegrations {
     public titledConnections: Integration[] = []
@@ -32,7 +33,7 @@ export class ProfileIntegrations {
         this.sort()
     }
 
-    public parseArrayToIntegrations(integrations: {label: string, imgPath: string, title?: string, link?: string}[]) {
+    public parseArray(integrations: {label: string, imgPath: string, title?: string, link?: string}[]) {
         integrations.forEach((integration) => {
             let toAdd: Integration  = {
                 label: integration.label,
@@ -50,12 +51,12 @@ export class ProfileIntegrations {
         let linker = (<></>)
         if (integration.link != undefined) {
             linker = (
-                <a href={integration.link} className={'conn-linker'}><img src={'/assets/ui/linker.svg'}></img></a>
+                <a href={integration.link} className={'conn-linker'}><img src={CDNLink + 'svg/icons/ui/linker.svg'}></img></a>
             )
         }
         return (
             <div aria-label={integration.label} role={'button'} className={'conn-container titledConnectionContainer'}>
-                <img className={'conn-icon'} src={'/assets/connections/' + integration.imgPath}/>
+                <img className={'conn-icon'} src={CDNLink + 'svg/icons/social/' + integration.imgPath}/>
                 <p>{integration.title}</p>
                 {linker}
             </div>
@@ -66,7 +67,7 @@ export class ProfileIntegrations {
         return (
             <div aria-label={integration.label} role={'button'} className={'conn-container'}>
                 <a href={integration.link}>
-                    <img className={'conn-icon'} src={'/assets/connections/' + integration.imgPath}/>
+                    <img className={'conn-icon'} src={CDNLink + 'svg/icons/social/' + integration.imgPath}/>
                 </a>
             </div>
         )

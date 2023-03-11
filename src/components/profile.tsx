@@ -1,23 +1,22 @@
 import '../css/profile.css'
 import '../css/labels.css'
-import {badgesArray} from "../data/badgesArray";
-import {connections} from "../data/connections";
+import {badgesArray, connections, CDNLink} from "../data/consts";
 import {ProfileIntegrations} from "../classes/profile/ProfileIntegrations";
 import {ProfileBadges} from "../classes/profile/ProfileBadges";
 
 function Profile() {
     const links = new ProfileIntegrations
-    links.parseArrayToIntegrations(connections)
+    links.parseArray(connections)
 
     const badges = new ProfileBadges
-    badges.parseArrayToBadges(badgesArray)
+    badges.parseArray(badgesArray)
 
     return (
         <div className="profile-container">
             <div className={'profile'} id={'profile'}>
                 <div className={'profile-images'}>
                     <div className={'profile-avatar'}>
-                        <img src={'https://cdn.justxale.com/png/profile/avatar.png'}></img>
+                        <img src={CDNLink + 'png/profile/avatar.png'}></img>
                     </div>
                     <div id={'badgeLabels'}>
 

@@ -1,3 +1,30 @@
+export const badgesArray = [
+    {
+        label: 'Site Developer',
+        imgPath: 'creator.svg',
+        id: 'developer',
+        onClickEvent: 'showNotification',
+    },
+    {
+        label: 'Verified',
+        imgPath: 'verified.svg',
+        id: 'verified',
+        onClickEvent: 'showNotification',
+    },
+    {
+        label: 'Supporter',
+        imgPath: 'supporter.svg',
+        id: 'supporter',
+        onClickEvent: 'openUrl',
+    },
+    {
+        label: 'Collaborator',
+        imgPath: 'collaborator.svg',
+        id: 'collaborator',
+        onClickEvent: 'openUrl',
+    },
+]
+
 export const connections = [
     {
         label: 'Discord',
@@ -53,3 +80,5 @@ export const connections = [
         link: 'https://justxale.com/projects',
     },*/ // future xd
 ]
+
+export const CDNLink: string = 'https://cdn.justxale.com/'

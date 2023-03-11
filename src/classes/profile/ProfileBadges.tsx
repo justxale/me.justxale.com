@@ -1,5 +1,6 @@
 import {Badge} from "../../types/Badge";
 import React from "react";
+import {CDNLink} from "../../data/consts";
 
 export class ProfileBadges {
     public profileBadges: Badge[] = []
@@ -8,7 +9,7 @@ export class ProfileBadges {
         this.profileBadges.push(badge)
     }
 
-    public parseArrayToBadges(arr: {label: string, imgPath: string, id: string, onClickEvent: any}[]) {
+    public parseArray(arr: {label: string, imgPath: string, id: string, onClickEvent: any}[]) {
         arr.forEach((badge) => {
             let badgeToAdd = new Badge
             badgeToAdd.label = badge.label
@@ -33,7 +34,7 @@ export class ProfileBadges {
                          className={'badgeContainer'}
                          id={badge.id}
                     >
-                        <img className={'badge-icon'} src={'/assets/badges/' + badge.imgPath}/>
+                        <img className={'badge-icon'} src={CDNLink + 'svg/icons/badges/' + badge.imgPath}/>
                     </div>
                 ))}
             </div>
