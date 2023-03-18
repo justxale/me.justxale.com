@@ -1,7 +1,7 @@
 export type Integration = {
     title?: string,
     label: string,
-    imgPath: string,
+    img: string,
     id: string,
     link?: string
 }

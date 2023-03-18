@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 
 export class Badge {
     public label: string = 'Unnamed'
-    public imgPath: string = 'collaborator.svg'
+    public img: string = 'contributor.svg'
     public id: string = 'other'
     public onClickEvent: string = 'openUrl'
 

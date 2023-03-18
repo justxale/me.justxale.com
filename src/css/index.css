@@ -1,16 +1,15 @@
 /*noinspection CssUnknownTarget*/
-@import 'fonts.css';
+@import "vars/fonts.css";
 
 :root {
-  font-family: "JetBrains Mono", Inter, sans-serif;
+  font-family: var(--main-font), sans-serif;
   font-size: 20px;
   line-height: 24px;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background: rgba(36, 36, 36, 20%),
-  linear-gradient(135deg, var(--color-profile-primary) 0%, var(--color-profile-secondary) 100%);
+  color: var(--text-primary);
+  background: var(--root-background);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -44,7 +43,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background-color: rgba(36, 36, 36, 20%),
-  linear-gradient(180deg, var(--color-profile-primary) 0%, var(--color-profile-secondary) 100%);
+  linear-gradient(180deg, var(--profile-primary) 0%, var(--profile-secondary) 100%);
 }
 
 h1 {
@@ -77,15 +76,6 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+img {
+  display: block;
 }

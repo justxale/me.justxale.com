@@ -1,0 +1,38 @@
+html[data-theme='light']:root {
+    --profile-primary: #8000FF;
+    --profile-secondary: #F49763;
+
+    --text-secondary: rgba(16, 16, 16, 0.7);
+    --text-primary: #252525;
+
+    --lines-secondary: rgba(125, 125, 125, 0.5);
+
+    --root-background: rgb(222, 222, 222);
+
+    --profile-background-primary: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6)),
+    linear-gradient(180deg, var(--profile-primary) 0%, var(--profile-secondary) 100%),
+    linear-gradient(180deg, var(--profile-primary) -16.02%, var(--profile-secondary) 110.84%);
+    --profile-background-secondary: rgba(255, 255, 255, 0.5);
+
+    --shadow-color: rgba(0, 0, 0, 0.5);
+}
+
+html[data-theme='dark']:root {
+    --profile-primary: #8000FF;
+    --profile-secondary: #F49763;
+
+    --text-secondary: rgba(255, 255, 255, 0.7);
+    --text-primary: rgba(255, 255, 255, 0.87);
+
+    --lines-secondary: rgba(255, 255, 255, 0.5);
+
+    --root-background: rgba(36, 36, 36, 20%);
+
+    --profile-background-primary: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+    linear-gradient(180deg, var(--profile-primary) 0%, var(--profile-secondary) 100%),
+    linear-gradient(180deg, var(--profile-primary) -16.02%, var(--profile-secondary) 110.84%);
+    --profile-background-secondary: rgba(0, 0, 0, 0.5);
+
+    --shadow-color: rgba(255, 255, 255, 0.5);
+
+}

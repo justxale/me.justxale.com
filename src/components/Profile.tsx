@@ -1,5 +1,6 @@
 import '../css/profile.css'
 import '../css/labels.css'
+import '../css/themes.css'
 import {badgesArray, connections, CDNLink} from "../data/consts";
 import {ProfileIntegrations} from "../classes/profile/ProfileIntegrations";
 import {ProfileBadges} from "../classes/profile/ProfileBadges";
@@ -17,9 +18,6 @@ function Profile() {
                 <div className={'profile-images'}>
                     <div className={'profile-avatar'}>
                         <img src={CDNLink + 'png/profile/avatar.png'}></img>
-                    </div>
-                    <div id={'badgeLabels'}>
-
                     </div>
                     {badges.createBadgesElement()}
                 </div>

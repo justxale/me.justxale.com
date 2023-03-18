@@ -1,0 +1,7 @@
+footer {
+    align-self: flex-start;
+    background-color: var(--profile-background-secondary);
+    padding: 12px;
+    margin-top: 24px;
+    border-radius: 12px;
+}

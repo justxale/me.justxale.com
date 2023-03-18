@@ -1,5 +1,6 @@
 import {Integration} from "../../types/Integration";
 import {CDNLink} from "../../data/consts";
+import Linker from '../../icons/ui/linker.svg'
 
 export class ProfileIntegrations {
     public titledConnections: Integration[] = []
@@ -16,7 +17,7 @@ export class ProfileIntegrations {
                 title: integration.title,
                 label: integration.label,
                 id: integration.id,
-                imgPath: integration.imgPath,
+                img: integration.img,
                 link: integration.link
             }
             this.titledConnections.push(toPush)
@@ -25,7 +26,7 @@ export class ProfileIntegrations {
             let toPush: Integration = {
                 label: integration.label,
                 id: integration.id,
-                imgPath: integration.imgPath,
+                img: integration.img,
                 link: integration.link
             }
             this.untitledConnections.push(toPush)
@@ -33,11 +34,11 @@ export class ProfileIntegrations {
         this.sort()
     }
 
-    public parseArray(integrations: {label: string, imgPath: string, title?: string, link?: string}[]) {
+    public parseArray(integrations: {label: string, img: string, title?: string, link?: string}[]) {
         integrations.forEach((integration) => {
             let toAdd: Integration  = {
                 label: integration.label,
-                imgPath: integration.imgPath,
+                img: integration.img,
                 title: integration.title,
                 id: getIdByLabel(integration.label),
                 link: integration.link
@@ -51,12 +52,12 @@ export class ProfileIntegrations {
         let linker = (<></>)
         if (integration.link != undefined) {
             linker = (
-                <a href={integration.link} className={'conn-linker'}><img src={CDNLink + 'svg/icons/ui/linker.svg'}></img></a>
+                <a href={integration.link} className={'conn-linker'}><img src={Linker}></img></a>
             )
         }
         return (
             <div aria-label={integration.label} role={'button'} className={'conn-container titledConnectionContainer'}>
-                <img className={'conn-icon'} src={CDNLink + 'svg/icons/social/' + integration.imgPath}/>
+                <img className={'conn-icon'} src={integration.img}/>
                 <p>{integration.title}</p>
                 {linker}
             </div>
@@ -67,7 +68,7 @@ export class ProfileIntegrations {
         return (
             <div aria-label={integration.label} role={'button'} className={'conn-container'}>
                 <a href={integration.link}>
-                    <img className={'conn-icon'} src={CDNLink + 'svg/icons/social/' + integration.imgPath}/>
+                    <img className={'conn-icon'} src={integration.img}/>
                 </a>
             </div>
         )

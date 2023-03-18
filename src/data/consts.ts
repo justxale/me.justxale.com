@@ -1,25 +1,39 @@
+import Discord from '../icons/social/discord.svg'
+import YouTube from '../icons/social/youtube.svg'
+import Github from '../icons/social/github.svg'
+import Telegram from '../icons/social/telegram.svg'
+import Boosty from '../icons/social/boosty.svg'
+import Twitch from '../icons/social/twitch.svg'
+import Other from '../icons/social/other.svg'
+import Contributor from '../icons/badges/contributor.svg'
+import Creator from '../icons/badges/creator.svg'
+import Verified from '../icons/badges/verified.svg'
+import Supporter from '../icons/badges/supporter.svg'
+
+
+
 export const badgesArray = [
     {
         label: 'Site Developer',
-        imgPath: 'creator.svg',
+        img: Creator,
         id: 'developer',
         onClickEvent: 'showNotification',
     },
     {
         label: 'Verified',
-        imgPath: 'verified.svg',
+        img: Verified,
         id: 'verified',
         onClickEvent: 'showNotification',
     },
     {
         label: 'Supporter',
-        imgPath: 'supporter.svg',
+        img: Supporter,
         id: 'supporter',
         onClickEvent: 'openUrl',
     },
     {
-        label: 'Collaborator',
-        imgPath: 'collaborator.svg',
+        label: 'Contributor',
+        img: Contributor,
         id: 'collaborator',
         onClickEvent: 'openUrl',
     },
@@ -28,28 +42,28 @@ export const badgesArray = [
 export const connections = [
     {
         label: 'Discord',
-        imgPath: 'discord.svg',
+        img: Discord,
         title: 'JustXale#1124',
     },
     {
         label: 'YouTube',
-        imgPath: 'youtube.svg',
+        img: YouTube,
         title: '@JustXale',
         link: 'https://youtube.com/@JustXale',
     },
     {
-        label: 'GitHub',
-        imgPath: 'github.svg',
+        label: 'Github',
+        img: Github,
         link: 'https://github.com/JustXale',
     },
     {
         label: 'Telegram',
-        imgPath: 'telegram.svg',
+        img: Telegram,
         link: 'https://t.me/justficial',
     },
     {
         label: 'Boosty',
-        imgPath: 'boosty.svg',
+        img: Boosty,
         link: 'https://boosty.to/xalethecat',
     },
     /*{
@@ -64,12 +78,12 @@ export const connections = [
     },*/
     {
         label: 'Twitch',
-        imgPath: 'twitch.svg',
+        img: Twitch,
         link: 'https://twitch.com/justyxale',
     },
     {
         label: 'other',
-        imgPath: 'other.svg',
+        img: Other,
         title: 'My Site',
         link: 'https://justxale.com',
     },

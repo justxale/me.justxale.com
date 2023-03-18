@@ -9,11 +9,11 @@ export class ProfileBadges {
         this.profileBadges.push(badge)
     }
 
-    public parseArray(arr: {label: string, imgPath: string, id: string, onClickEvent: any}[]) {
+    public parseArray(arr: {label: string, img: string, id: string, onClickEvent: any}[]) {
         arr.forEach((badge) => {
             let badgeToAdd = new Badge
             badgeToAdd.label = badge.label
-            badgeToAdd.imgPath = badge.imgPath
+            badgeToAdd.img = badge.img
             badgeToAdd.id = badge.id
             badgeToAdd.onClickEvent = badge.onClickEvent
 
@@ -34,7 +34,7 @@ export class ProfileBadges {
                          className={'badgeContainer'}
                          id={badge.id}
                     >
-                        <img className={'badge-icon'} src={CDNLink + 'svg/icons/badges/' + badge.imgPath}/>
+                        <img className={'badge-icon'} src={badge.img}/>
                     </div>
                 ))}
             </div>

@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/electro.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JustXale Links</title>
+    <script>
+      document.documentElement.dataset.theme =
+              localStorage.getItem('theme') ?? 'dark';
+    </script>
   </head>
   <body>
-    <div id="root"></div>
+    <main id="root"></main>
     <script type="module" src="/src/init/main.tsx"></script>
   </body>
 </html>

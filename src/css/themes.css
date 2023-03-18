@@ -1,0 +1,32 @@
+html[data-theme='dark'] .theme-light,
+html[data-theme='light'] .theme-dark {
+    display: none;
+}
+
+html[data-theme='light'] .conn-linker,
+html[data-theme='light'] .conn-icon,
+html[data-theme='light'] .theme-light {
+    filter: invert(100%);
+}
+
+.theme-dark, .theme-light {
+    height: 32px;
+}
+
+#theme-changer {
+    position: fixed;
+
+    right: 12px;
+    top: 12px;
+
+    border-radius: 50%;
+    background-color: transparent;
+    transition: background-color 0.5s;
+    padding: 8px;
+    border: none;
+}
+
+#theme-changer:hover {
+    background-color: var(--shadow-color);
+}
+
