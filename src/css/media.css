@@ -30,7 +30,6 @@
     .profile-info {
         display: flex;
         flex-direction: column;
-        background: rgba(0, 0, 0, 0.5);
         border-radius: 8px;
         /*margin: 8px;*/
         align-self: center;
@@ -112,7 +111,6 @@
 
         font-size: 16px;
 
-        background: rgba(0, 0, 0, 0.5);
         border-radius: 12px;
         padding: 8px;
     }
@@ -132,7 +130,7 @@
     }
 
     .conn-icon {
-        height: 60px;
+        height: 48px;
         width: auto;
         display: block;
         align-self: center;
