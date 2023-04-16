@@ -155,12 +155,21 @@
   align-self: center;
 }
 
+@keyframes show {
+  from {opacity: 0} to {opacity: 100}
+}
+
 .conn-icon {
   height: 56px;
   width: auto;
   display: block;
   align-self: center;
 }
+
+/*.badge-icon, .conn-icon, .profile-avatar {
+  animation-name: show;
+  animation-duration: 1s;
+}*/
 
 .conn-linker {
   align-self: center;
