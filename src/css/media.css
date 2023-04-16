@@ -3,147 +3,69 @@
         padding: 3rem 0;
     }
 
-    .profile-container {
-        width: 80vw;
-    }
-
     h4 {
         font-weight: 700;
         margin: 0;
         font-size: 16px;
     }
 
+    .profile-container {
+        width: 80vw;
+    }
+
     .profile-avatar {
-        justify-self: flex-start;
-        align-self: end;
         height: 80px;
-        margin: 8px;
     }
 
     .profile-avatar img {
         height: 80px;
-        width: auto;
-        border-radius: 50%;
-        border: 4px solid var(--profile-primary);
-    }
-
-    .profile-info {
-        display: flex;
-        flex-direction: column;
-        border-radius: 8px;
-        /*margin: 8px;*/
-        align-self: center;
     }
 
     .tab {
-        align-self: flex-start;
         margin: 8px;
         max-width: 70vw;
     }
 
     .profileStatus {
-        color: var(--text-secondary);
         font-size: 16px;
-        padding-top: 8px;
-        padding-bottom: 4px;
     }
 
     .profileNickname {
         padding-top: 8px;
-        display: block;
-        width: auto;
-        text-align: left;
         font-size: 20px;
-        font-weight: bold;
     }
 
     .profileAbout {
         padding-top: 8px;
-        border-top: 3px solid var(--lines-secondary);
     }
 
     .profileConnections {
         padding-top: 8px;
-        border-top: 3px solid var(--lines-secondary);
-
         max-width: 70vw;
     }
 
-
     .integrationTab {
         padding-top: 8px;
-        border-top: 3px solid var(--lines-secondary);
         margin-top: 8px;
     }
 
     .profileAbout p {
-        margin: 0;
         font-size: 16px;
-        line-height: 1.2;
-        color: var(--text-secondary);
     }
 
     .profile-images {
-        display: inline-grid;
-        grid-auto-flow: column;
         margin: 8px;
-    }
-
-    .profile-connections {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .untitledConnections {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .titledConnections {
-        display: flex;
-        flex-direction: column;
     }
 
     .conn-container {
-        display: flex;
-        margin: 8px;
-
         font-size: 16px;
-
-        border-radius: 12px;
-        padding: 8px;
     }
 
     .titledConnectionContainer {
-        display: inline-grid;
         grid-template-columns: 20vw 27vw 20vw;
-    }
-
-    .titledConnectionContainer p {
-        justify-self: center;
-    }
-
-    .conn-container p {
-        margin: 8px;
-        align-self: center;
     }
 
     .conn-icon {
         height: 48px;
-        width: auto;
-        display: block;
-        align-self: center;
-    }
-
-    .conn-linker {
-        align-self: center;
-        justify-self: center;
-    }
-
-    .conn-linker img {
-        height: 40px;
-        width: auto;
-        display: block;
     }
 }
