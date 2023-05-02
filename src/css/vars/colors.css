@@ -1,6 +1,6 @@
 html[data-theme='light']:root {
-    --profile-primary: #8000FF;
-    --profile-secondary: #F49763;
+    --profile-primary: rgb(135, 32, 243);
+    --profile-secondary: rgba(246, 167, 122, 1);
 
     --text-secondary: rgba(16, 16, 16, 0.7);
     --text-primary: #252525;
@@ -18,8 +18,8 @@ html[data-theme='light']:root {
 }
 
 html[data-theme='dark']:root {
-    --profile-primary: #8000FF;
-    --profile-secondary: #F49763;
+    --profile-primary: rgb(135, 32, 243);
+    --profile-secondary: rgba(246, 167, 122, 1);
 
     --text-secondary: rgba(255, 255, 255, 0.7);
     --text-primary: rgba(255, 255, 255, 0.87);
@@ -34,5 +34,4 @@ html[data-theme='dark']:root {
     --profile-background-secondary: rgba(0, 0, 0, 0.5);
 
     --shadow-color: rgba(255, 255, 255, 0.5);
-
 }
