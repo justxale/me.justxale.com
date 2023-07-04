@@ -43,30 +43,30 @@ export const connections = [
     {
         label: 'Discord',
         img: Discord,
-        title: 'JustXale#1124',
+        title: '@justxale',
     },
     {
         label: 'YouTube',
         img: YouTube,
         title: '@JustXale',
-        link: 'https://youtube.com/@JustXale',
+        link: 'https://youtube.com/@justxale',
     },
     {
         label: 'Github',
         img: Github,
-        link: 'https://github.com/JustXale',
+        link: 'https://github.com/justxale',
     },
     {
         label: 'Telegram',
         img: Telegram,
         link: 'https://t.me/justficial',
     },
-    {
+    /*{
         label: 'Boosty',
         img: Boosty,
         link: 'https://boosty.to/xalethecat',
     },
-    /*{
+    {
         label: 'Ko-Fi',
         imgPath: 'ko-fi.svg',
         link: '',
