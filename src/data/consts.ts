@@ -48,7 +48,7 @@ export const connections = [
     {
         label: 'YouTube',
         img: YouTube,
-        title: '@JustXale',
+        title: '@justxale',
         link: 'https://youtube.com/@justxale',
     },
     {
